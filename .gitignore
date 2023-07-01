@@ -12,7 +12,6 @@ dist
 dist-ssr
 *.local
 design
-public
 yarn.lock
 
 # Editor directories and files

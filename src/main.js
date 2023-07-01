@@ -1,4 +1,7 @@
 import './styles/style.scss'
+import './libs/gsap.min.js'
+import './libs/ScrollSmoother.min.js'
+import './libs/ScrollTrigger.min.js'
 
 let itemsLeft = gsap.utils.toArray('.gallery__left .gallery__item'),
     itemsRight = gsap.utils.toArray('.gallery__right .gallery__item')
