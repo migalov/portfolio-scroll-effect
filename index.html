@@ -6,8 +6,15 @@
   <title>Document</title>
 </head>
 <body>
-  <pug src="./templates/hero.pug" />
-  <pug src="./templates/portfolio.pug" />
-  <script type="module" src="/main.js"></script>
+  <div class="wrapper">
+    <div class="content">
+      <pug src="./templates/hero.pug" />
+      <pug src="./templates/portfolio.pug" />
+    </div>
+  </div>
+  <script src="./src/libs/gsap.min.js" defer></script>
+  <script src="./src/libs//ScrollTrigger.min.js" defer></script>
+  <script src="./src/libs//ScrollSmoother.min.js" defer></script>
+  <script type="module" src="/main.js" defer></script>
 </body>
 </html>

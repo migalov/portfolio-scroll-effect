@@ -9,12 +9,12 @@ mixin text-block(title, description)
 .portfolio
   .container
     .gallery
-      .gallery__left
+      .gallery__left(data-speed=".9")
         +preview(1)
         +preview(2)
         +text-block(data[0].title, data[0].description)
         +preview(6)
-      .gallery__right
+      .gallery__right(data-speed="1.1")
         +text-block(data[1].title, data[1].description)
         each val in [4, 5, 3] 
           +preview(val)
