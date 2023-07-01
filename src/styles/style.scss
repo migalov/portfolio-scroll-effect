@@ -1,15 +1,19 @@
 @import '_reset';
 @import '_fonts';
 
+@import './templates/gallery';
+
 :root {
   --index: calc(1vw + 1vh);
   --c-header: #f4efec;
   --c-text: #cdc6c3;
 
   --c-white: #fff;
+  
+  --gallery-gap: calc(var(--index)  * 10);
 }
 
-body {
+html, body {
   background-image: url(../img/bg.jpg);
   background-size: 50px;
   color: var(--c-white);
@@ -17,14 +21,14 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4,h5,h6 {
-  font-family: Outfit;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Outfit";
 }
 
 
 
 .hero{
-  width: calc(var(--index) * 36);
+  max-width: calc(var(--index) * 36);
   position: absolute;
   left: 37vw;
   top: 8vh;
