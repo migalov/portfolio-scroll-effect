@@ -1,0 +1,47 @@
+@import '_reset';
+@import '_fonts';
+
+:root {
+  --index: calc(1vw + 1vh);
+  --c-header: #f4efec;
+  --c-text: #cdc6c3;
+
+  --c-white: #fff;
+}
+
+body {
+  background-image: url(../img/bg.jpg);
+  background-size: 50px;
+  color: var(--c-white);
+  font-family: Raleway;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4,h5,h6 {
+  font-family: Outfit;
+}
+
+
+
+.hero{
+  width: calc(var(--index) * 36);
+  position: absolute;
+  left: 37vw;
+  top: 8vh;
+}
+
+.container {
+  padding: 0 7vw;
+}
+
+.main-header {
+  min-height: 100vh;
+}
+
+.main-title {
+  position: absolute;
+  font-size: calc(var(--index) * 8);
+  width: min-content;
+  bottom: 10vh;
+  line-height: .9;
+}
